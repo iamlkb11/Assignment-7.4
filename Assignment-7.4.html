@@ -1,0 +1,29 @@
+<html><!-- Head of the Root -->
+	<head><!-- child sub root of the html tag as head tag  -->
+    	<!-- it is a title tag -->
+		<title>Outer & Iner Function</title>
+	
+	</head>
+	<body>
+		<h3>Click on submit.</h3>
+		<br>
+
+		<input type="submit" name="submitBtn" onclick="callOuterFunction();"/>
+		<script type="text/javascript">
+		//Outer function.
+    	function outerFunction()
+		{
+		var x="football player.";
+			function inner(x)
+			{
+			alert("Messi is greatest "+x);
+			}
+		inner(x);
+		}
+			function callOuterFunction()
+			{
+			var user=new outerFunction();
+			}
+		</script>
+	</body>
+</html>
